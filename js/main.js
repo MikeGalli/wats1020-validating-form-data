@@ -8,9 +8,9 @@
 // Refer to the `index.html` file for the validation rules that must be enforced.
 $(document).on('ready', function(){
   $('#order-form').validate({
-      submitHandler: function(form) {
+      submitHandler: function(X) {
           // If form is valid, submit it!
-          form.submit();
+          X.submit();
       },
       rules: {
           "your-name": {
