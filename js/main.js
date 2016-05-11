@@ -15,7 +15,7 @@ $(document).on('ready', function(){
       rules: {
           "your-name": {
               required: true,
-              maxlength: 128
+              maxlength: 2
           },
           "your-state": {
               required: true,
