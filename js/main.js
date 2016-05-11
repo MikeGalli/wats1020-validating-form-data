@@ -20,7 +20,7 @@ $(document).on('ready', function(){
           "your-state": {
               required: true,
               maxlength: 2
-          },
+          }
 
 
         }
