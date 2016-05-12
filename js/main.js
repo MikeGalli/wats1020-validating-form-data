@@ -17,7 +17,7 @@ $(document).on('ready', function(){
               required: true,
               maxlength: 2
           },
-          "required-group" : {
+          "div.form-group. required": {
             required: true
           },
           "your-state": {
