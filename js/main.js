@@ -25,18 +25,9 @@ $(document).on('ready', function(){
           },
           "your-state": {
               required: true,
-              maxlength: 2
+              maxlength: 3
           }
 
-          function isStateOk(inputField, helpId) {        // See if the input value contains any text
-
-return editNodeText(/^A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|
-
-M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]$/, inputField.value, helpId, “Enter a State Code in Uppercase (Ex.NY, PA, CA)”);
-
-}
-
-- See more at: http://www.newthinktank.com/2011/02/javascript-video-tutorial-pt-7/#sthash.QPZqBsS9.dpuf
 
 
         }
