@@ -12,6 +12,9 @@ $(document).on('ready', function(){
           // If form is valid, submit it!
           X.submit();
       },
+      onfocusout: function(element) {
+        $(element).valid();
+      },
       rules: {
           "your-name": {
               required: true,
