@@ -19,15 +19,13 @@ $(document).on('ready', function(){
 
   $.validator.methods.NoNum = function( value, element ) {  //Custom Method
     return this.optional( element ) || /[^0-9]/.test( value );
-    jQuery.extend(jQuery.validator.messages, {
-        NoNum: "XXXXXXXXXXX."
-
-    });
-
-
-
   }
 
+
+  jQuery.extend(jQuery.validator.messages, {
+      NoNum: "XXXXXXXXXXX."
+
+  });
 
 
   $('#order-form').validate({
