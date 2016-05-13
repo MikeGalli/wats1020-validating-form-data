@@ -6,7 +6,23 @@
 // 3. Connect the validation object to an event handler tied to the submit button.
 
 // Refer to the `index.html` file for the validation rules that must be enforced.
+
+
+///Find add method example     jQuery.validator.addMethod( name, method [, message ] )
+
+
+
+
+
+
 $(document).on('ready', function(){
+
+  $.validator.methods.regularExpression = function( value, element ) {
+    return this.optional( element ) || /[^0-9]/.test( value );
+  }
+
+
+
   $('#order-form').validate({
       submitHandler: function(X) {
           // If form is valid, submit it!
@@ -19,7 +35,7 @@ $(document).on('ready', function(){
           "your-name": {
               required: true,
               maxlength: 2,
-              regularExpression: "[^0-9]"
+              regularExpression: true
 
           },
           "div.form-group .required": {
