@@ -19,13 +19,6 @@ $(document).on('ready', function(){
 
   $.validator.methods.NoNum = function( value, element ) {  //Custom Method
     return this.optional( element ) || /[^0-9]/.test( value );
-    jQuery.extend(jQuery.validator.messages, {
-        NoNum: "XXXXXXXXXXX."
-
-    });
-
-
-
   }
 
 
@@ -57,4 +50,11 @@ $(document).on('ready', function(){
 
         }
     });
+});
+
+
+
+jQuery.extend(jQuery.validator.messages, {
+    NoNum: "XXXXXXXXXXX."
+
 });
