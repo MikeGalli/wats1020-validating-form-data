@@ -19,7 +19,7 @@ $(document).on('ready', function(){
           "your-name": {
               required: true,
               maxlength: 2
-              ///lettersonly: true
+              lettersonly: true
           },
           "div.form-group .required": {
             required: true
