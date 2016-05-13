@@ -10,21 +10,24 @@
 
 ///Find add method example     jQuery.validator.addMethod( name, method [, message ] )
 
-
-
-
+/*
+If jQuery doesn't have a method to accomplish the validation you need...
+Make a custom method.
+  Step 1)  Make a new validator method called "NoNum"
+  Step 2)  Create a message for the new method, "NoNum" (to be shown incase of invalid entry).
+  Step 3)  Call for the method in the rules.
+              Numbers are not allowed in the Name field, so, we'll call for the NoNum method there.
+*/
 
 
 $(document).on('ready', function(){
 
-  $.validator.methods.NoNum = function( value, element ) {  //Custom Method
+  $.validator.methods.NoNum = function( value, element ) {      //Step 1) Custom Method
     return this.optional( element ) || /[^0-9]/.test( value );
   }
 
-
   jQuery.extend(jQuery.validator.messages, {
-      NoNum: "XXXXXXXXXXX."
-
+      NoNum: "Please don't use numbers for names"                //Step 2) error message.
   });
 
 
@@ -40,7 +43,7 @@ $(document).on('ready', function(){
           "your-name": {
               required: true,
               maxlength: 2,
-              NoNum: true
+              NoNum: true                 //Step 3) Setting the method to true, means do the check here, on this object
 
           },
           "div.form-group .required": {
