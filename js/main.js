@@ -29,12 +29,16 @@ $(document).on('ready', function(){
               required: true,
               maxlength: 3
           }
-          jQuery.extend(jQuery.validator.messages, {
-              required: "This field is requiredXXXXXXXXXXX.",
 
-          });
 
 
         }
     });
+});
+
+
+
+jQuery.extend(jQuery.validator.messages, {
+    required: "This field is requiredXXXXXXXXXXX.",
+
 });
