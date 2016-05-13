@@ -18,8 +18,8 @@ $(document).on('ready', function(){
       rules: {
           "your-name": {
               required: true,
-              maxlength: 2
-              regularExpression: ""
+              maxlength: 2,
+              regularExpression: "/^([^0-9]*)$/"
           },
           "div.form-group .required": {
             required: true
