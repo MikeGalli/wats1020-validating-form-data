@@ -19,7 +19,7 @@ $(document).on('ready', function(){
           "your-name": {
               required: true,
               maxlength: 2
-              regularExpression: /^([^0-9]*)$/
+              regularExpression: "/^([^0-9]*)$/"
           },
           "div.form-group .required": {
             required: true
