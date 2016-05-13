@@ -43,7 +43,7 @@ $(document).on('ready', function(){
           "your-name": {
               required: true,
               maxlength: 2,
-              NoNum: true                 //Step 3) Setting the method to true, means do the check here, on this object
+              NoNum: true                 //Step 3) Setting the method to true, means do the validation here, on this object
 
           },
           "div.form-group .required": {
