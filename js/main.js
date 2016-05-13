@@ -39,6 +39,6 @@ $(document).on('ready', function(){
 
 
 jQuery.extend(jQuery.validator.messages, {
-    required: "This field is requiredXXXXXXXXXXX.",
+    regularExpression: "This field is requiredXXXXXXXXXXX.",
 
 });
