@@ -51,7 +51,8 @@ $(document).on('ready', function(){
           },
           "your-state": {
               required: true,
-              maxlength: 3
+              maxlength: 2,
+              minlength: 2
           }
 
 
