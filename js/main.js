@@ -71,6 +71,7 @@ jQuery.extend(jQuery.validator.messages, {
             digits: true
           },
           "card-number": {
+            required: true,
             cardNum: true
           }
 
