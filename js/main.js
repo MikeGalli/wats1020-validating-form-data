@@ -74,6 +74,11 @@ jQuery.extend(jQuery.validator.messages, {
             required: true,
             cardNum: true
           }
+          "cvv": {
+            required: true
+            maxlength: 3,
+            minlength: 3
+          }
 
 
 
