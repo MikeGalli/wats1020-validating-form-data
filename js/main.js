@@ -53,6 +53,11 @@ $(document).on('ready', function(){
               required: true,
               maxlength: 2,
               minlength: 2
+          },
+          "your-zip": {
+            maxlength: 5,
+            minlength: 5,
+            digits: true
           }
 
 
