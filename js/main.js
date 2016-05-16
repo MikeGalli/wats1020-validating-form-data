@@ -29,6 +29,17 @@ $(document).on('ready', function(){
   jQuery.extend(jQuery.validator.messages, {
       NoNum: "Please don't use numbers for names"                //Step 2) error message.
   });
+______________________________________________________
+
+$.validator.methods.cardNum = function( value, element ) {      //Step 1) Custom Method
+  return this.optional( element ) || /[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4}/.test( value );
+}
+
+jQuery.extend(jQuery.validator.messages, {
+    cardNum: "Please enter a valid credit card number"                //Step 2) error message.
+});
+
+
 
 
   $('#order-form').validate({
@@ -58,6 +69,9 @@ $(document).on('ready', function(){
             maxlength: 5,
             minlength: 5,
             digits: true
+          },
+          "card-number": {
+            cardNum: true
           }
 
 
