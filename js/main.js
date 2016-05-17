@@ -79,6 +79,9 @@ jQuery.extend(jQuery.validator.messages, {
             maxlength: 3,
             minlength: 3
           }
+          "comments": {
+            maxlength: 3
+          }
 
 
 
