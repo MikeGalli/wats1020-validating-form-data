@@ -84,7 +84,7 @@ jQuery.extend(jQuery.validator.messages, {
           },
           "expiry-month": {
             required: true
-          }
+          },
 
 
 
