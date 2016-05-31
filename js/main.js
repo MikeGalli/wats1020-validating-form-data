@@ -21,7 +21,7 @@ Make a custom method.
 
 
 $(document).on('ready', function(){
-
+  //object   method  madeup attribute name-NoNum
   $.validator.methods.NoNum = function( value, element ) {      //Step 1) Custom Method
     return this.optional( element ) || /[^0-9]/.test( value );
   }
@@ -83,8 +83,8 @@ jQuery.extend(jQuery.validator.messages, {
             maxlength: 3
           },
           "expiry-month": {
-            required: true
-          },
+    				required: true
+    			},
 
 
 
