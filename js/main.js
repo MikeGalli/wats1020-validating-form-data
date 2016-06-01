@@ -53,7 +53,7 @@ jQuery.extend(jQuery.validator.messages, {
       rules: {
           "your-name": {
               required: true,
-              maxlength: 128,
+              maxlength: 2,
               NoNum: true                 //Step 3) Setting the method to true, means do the validation here, on this object
 
           },
