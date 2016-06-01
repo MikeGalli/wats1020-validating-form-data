@@ -72,7 +72,7 @@ jQuery.extend(jQuery.validator.messages, {
           },
           "card-number": {
             required: true,
-            cardNum: true
+            creditcard: true
           },
           "cvv": {
             required: true,
@@ -85,7 +85,9 @@ jQuery.extend(jQuery.validator.messages, {
           "expiry-month": {
     				required: true
     			},
-
+          "expiry-year": {
+    				required: true
+    			}
 
 
         }
