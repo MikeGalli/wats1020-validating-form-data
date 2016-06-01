@@ -29,11 +29,11 @@ $(document).on('ready', function(){
   jQuery.extend(jQuery.validator.messages, {
       NoNum: "Please don't use numbers for names"                //Step 2) error message.
   });
-______________________________________________________
 
-$.validator.methods.cardNum = function( value, element ) {      //Step 1) Custom Method
+
+/*$.validator.methods.cardNum = function( value, element ) {      //Step 1) Custom Method
   return this.optional( element ) || /[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4}/.test( value );
-}
+}*/
 
 jQuery.extend(jQuery.validator.messages, {
     cardNum: "Please enter a valid credit card number"                //Step 2) error message.
@@ -53,7 +53,7 @@ jQuery.extend(jQuery.validator.messages, {
       rules: {
           "your-name": {
               required: true,
-              maxlength: 128,
+              maxlength: 2,
               NoNum: true                 //Step 3) Setting the method to true, means do the validation here, on this object
 
           },
@@ -78,7 +78,7 @@ jQuery.extend(jQuery.validator.messages, {
             required: true,
             maxlength: 3,
             minlength: 3
-          }
+          },
           "comments": {
             maxlength: 3
           },
